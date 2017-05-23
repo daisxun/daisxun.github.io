@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>first | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="####1.添加结点  内部追加  .prepend(); 在ul之后添加标签 .prependTo(); 在第一个li之前添加标签  .append();把newtag添加到第一个li之前  .appendTo();在指定元素之后追加 $(&amp;apos;ul&amp;apos;).prepend(newtag); $(newtag).prependTo(&amp;apos;li&amp;apos;); $(&amp;apos;u">
+<meta property="og:type" content="article">
+<meta property="og:title" content="first">
+<meta property="og:url" content="http://yoursite.com/2017/05/23/first/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="####1.添加结点  内部追加  .prepend(); 在ul之后添加标签 .prependTo(); 在第一个li之前添加标签  .append();把newtag添加到第一个li之前  .appendTo();在指定元素之后追加 $(&amp;apos;ul&amp;apos;).prepend(newtag); $(newtag).prependTo(&amp;apos;li&amp;apos;); $(&amp;apos;u">
+<meta property="og:updated_time" content="2017-05-23T12:27:26.600Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="first">
+<meta name="twitter:description" content="####1.添加结点  内部追加  .prepend(); 在ul之后添加标签 .prependTo(); 在第一个li之前添加标签  .append();把newtag添加到第一个li之前  .appendTo();在指定元素之后追加 $(&amp;apos;ul&amp;apos;).prepend(newtag); $(newtag).prependTo(&amp;apos;li&amp;apos;); $(&amp;apos;u">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/05/23/first/" class="article-date">
+  <time datetime="2017-05-23T12:14:44.000Z" itemprop="datePublished">2017-05-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      first
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>####1.添加结点</p>
+<ul>
+<li><p>内部追加</p>
+<ul>
+<li>.prepend(); 在ul之后添加标签</li>
+<li><p>.prependTo(); 在第一个li之前添加标签</p>
+</li>
+<li><p>.append();把newtag添加到第一个li之前</p>
+</li>
+<li><p>.appendTo();在指定元素之后追加</p>
+<pre><code>$(&apos;ul&apos;).prepend(newtag);
+$(newtag).prependTo(&apos;li&apos;);
+$(&apos;ul&apos;).append(newtag);
+$(newtag).appendTo(&apos;li&apos;);
+</code></pre></li>
+</ul>
+</li>
+<li><p>外部追加</p>
+<ul>
+<li>.after();</li>
+<li>.before();</li>
+<li>.insertBefore();insertBefore() 方法在被选元素之前插入 HTML 标记或已有的元素。</li>
+<li><p>.insertAfter();</p>
+<pre><code>$(&apos;ul&apos;).after(newtag);
+$(&apos;ul&apos;).before(newtag);
+$(newtag).insertBefore(&apos;ul&apos;);
+$(newtag).insertAfter(&apos;ul&apos;);
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<p>####2.删除结点</p>
+<ul>
+<li>.remove(); 把当前结点删除</li>
+<li><p>.empty(); 清空结点当中的所有内部.</p>
+<pre><code> 把当前结点删除
+$(&apos;ul&apos;).remove();
+清空结点当中的所有内部.
+$(&apos;ul&apos;).empty();
+</code></pre></li>
+</ul>
+<p>####3.替换结点</p>
+<ul>
+<li><p>.replaceWith()</p>
+<pre><code>把p结点替换成newTag
+$(&apos;p&apos;).replaceWith(newTag);
+</code></pre><p>####4.复制结点</p>
+</li>
+<li><p>.clone()</p>
+<pre><code>$(&apos;button&apos;).click(function () {
+    复制第一个li
+   var newTag = $(&apos;li:first&apos;).clone();
+   $(&apos;ul&apos;).append(newTag);
+
+});
+</code></pre></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/05/23/first/" data-id="cj31j516q0000skvch4t6rk73" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/05/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/05/23/first/">first</a>
+          </li>
+        
+          <li>
+            <a href="/2017/05/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
